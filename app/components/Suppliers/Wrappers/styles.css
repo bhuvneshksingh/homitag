@@ -1,0 +1,18 @@
+.innerWrapper-enter, .innerWrapper-appear{
+  -webkit-filter: blur(1rem);
+  filter: blur(1rem);
+}
+.innerWrapper-enter-active, .innerWrapper-appear-active {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transition: filter 250ms ease-in;
+}
+.innerWrapper-exit {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.innerWrapper-exit-active {
+  -webkit-filter: blur(1rem);
+  filter: blur(1em);
+  transition: opacity 250ms ease-in;
+}
